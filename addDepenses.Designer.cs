@@ -36,14 +36,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_date = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Snow;
+            this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.tb_categorie);
             this.panel4.Controls.Add(this.tbn_enregistrer);
             this.panel4.Controls.Add(this.rtb_description);
@@ -51,7 +52,6 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.tb_date);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
@@ -129,14 +129,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Catégorie";
             // 
-            // tb_date
-            // 
-            this.tb_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_date.Location = new System.Drawing.Point(122, 40);
-            this.tb_date.Name = "tb_date";
-            this.tb_date.Size = new System.Drawing.Size(340, 26);
-            this.tb_date.TabIndex = 1;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -147,6 +139,13 @@
             this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 46);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(340, 20);
+            this.dateTimePicker1.TabIndex = 11;
             // 
             // addDepenses
             // 
@@ -171,7 +170,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_date;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

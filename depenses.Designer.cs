@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_add_depenses = new System.Windows.Forms.Button();
-            this.btn_rechercher = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtb_rechercher = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,14 +45,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_date = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_add_depenses = new System.Windows.Forms.Button();
+            this.btn_rechercher = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtb_rechercher = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,79 +71,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(843, 479);
             this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.btn_add_depenses);
-            this.panel2.Controls.Add(this.btn_rechercher);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtb_rechercher);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(843, 98);
-            this.panel2.TabIndex = 4;
-            // 
-            // btn_add_depenses
-            // 
-            this.btn_add_depenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_add_depenses.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_add_depenses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_depenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_depenses.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_add_depenses.Location = new System.Drawing.Point(624, 54);
-            this.btn_add_depenses.Name = "btn_add_depenses";
-            this.btn_add_depenses.Size = new System.Drawing.Size(201, 37);
-            this.btn_add_depenses.TabIndex = 4;
-            this.btn_add_depenses.Text = "+  Ajouter dépense";
-            this.btn_add_depenses.UseVisualStyleBackColor = false;
-            this.btn_add_depenses.Click += new System.EventHandler(this.btn_add_depenses_Click);
-            // 
-            // btn_rechercher
-            // 
-            this.btn_rechercher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_rechercher.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_rechercher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rechercher.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_rechercher.Location = new System.Drawing.Point(216, 65);
-            this.btn_rechercher.Name = "btn_rechercher";
-            this.btn_rechercher.Size = new System.Drawing.Size(86, 26);
-            this.btn_rechercher.TabIndex = 3;
-            this.btn_rechercher.Text = "Search";
-            this.btn_rechercher.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(323, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dépenses";
-            // 
-            // txtb_rechercher
-            // 
-            this.txtb_rechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtb_rechercher.Location = new System.Drawing.Point(11, 65);
-            this.txtb_rechercher.Name = "txtb_rechercher";
-            this.txtb_rechercher.Size = new System.Drawing.Size(201, 26);
-            this.txtb_rechercher.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Rechercher";
             // 
             // panel3
             // 
@@ -207,6 +134,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
+            this.panel5.Controls.Add(this.dateTimePicker1);
             this.panel5.Controls.Add(this.tb_categorie);
             this.panel5.Controls.Add(this.btn_supprimer);
             this.panel5.Controls.Add(this.tbn_modifier);
@@ -215,7 +143,6 @@
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.tb_date);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(495, 18);
             this.panel5.Name = "panel5";
@@ -307,14 +234,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Catégorie";
             // 
-            // tb_date
-            // 
-            this.tb_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_date.Location = new System.Drawing.Point(93, 40);
-            this.tb_date.Name = "tb_date";
-            this.tb_date.Size = new System.Drawing.Size(220, 26);
-            this.tb_date.TabIndex = 1;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -326,6 +245,86 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Date";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.btn_add_depenses);
+            this.panel2.Controls.Add(this.btn_rechercher);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtb_rechercher);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(843, 98);
+            this.panel2.TabIndex = 4;
+            // 
+            // btn_add_depenses
+            // 
+            this.btn_add_depenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_add_depenses.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_add_depenses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_depenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_depenses.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_add_depenses.Location = new System.Drawing.Point(624, 54);
+            this.btn_add_depenses.Name = "btn_add_depenses";
+            this.btn_add_depenses.Size = new System.Drawing.Size(201, 37);
+            this.btn_add_depenses.TabIndex = 4;
+            this.btn_add_depenses.Text = "+  Ajouter dépense";
+            this.btn_add_depenses.UseVisualStyleBackColor = false;
+            this.btn_add_depenses.Click += new System.EventHandler(this.btn_add_depenses_Click);
+            // 
+            // btn_rechercher
+            // 
+            this.btn_rechercher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_rechercher.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_rechercher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_rechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rechercher.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_rechercher.Location = new System.Drawing.Point(216, 65);
+            this.btn_rechercher.Name = "btn_rechercher";
+            this.btn_rechercher.Size = new System.Drawing.Size(86, 26);
+            this.btn_rechercher.TabIndex = 3;
+            this.btn_rechercher.Text = "Search";
+            this.btn_rechercher.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(323, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dépenses";
+            // 
+            // txtb_rechercher
+            // 
+            this.txtb_rechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_rechercher.Location = new System.Drawing.Point(11, 65);
+            this.txtb_rechercher.Name = "txtb_rechercher";
+            this.txtb_rechercher.Size = new System.Drawing.Size(201, 26);
+            this.txtb_rechercher.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Rechercher";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(93, 46);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
+            this.dateTimePicker1.TabIndex = 12;
+            // 
             // depenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,13 +333,13 @@
             this.Controls.Add(this.panel1);
             this.Name = "depenses";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +363,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_date;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_add_depenses;
@@ -372,5 +370,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtb_rechercher;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

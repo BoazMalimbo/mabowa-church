@@ -58,6 +58,7 @@
     <Compile Include="addRevenus.Designer.cs">
       <DependentUpon>addRevenus.cs</DependentUpon>
     </Compile>
+    <Compile Include="connexionDB.cs" />
     <Compile Include="depenses.cs">
       <SubType>Form</SubType>
     </Compile>
