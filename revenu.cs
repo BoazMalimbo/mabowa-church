@@ -35,8 +35,8 @@ namespace eglise_mambowa
 
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Revenu enregistré avec succès !");
 
+                
 
             }
             catch (Exception ex)
