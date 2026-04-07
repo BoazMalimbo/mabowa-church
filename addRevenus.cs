@@ -25,16 +25,37 @@ namespace eglise_mambowa
         {
             SqlConnection conn = db.GetConnexion();
             conn.Open();
-            if (conn.State == ConnectionState.Open)
-            {
-                MessageBox.Show("Connexion réussie !");
-            }
-            else
-            {
-                MessageBox.Show("Connexion échouée !");
-            }
 
-            conn.Close();
+            
+
+        }
+
+        private void tbn_enregistrer_Click(object sender, EventArgs e)
+        {
+            // instanciation de la classe model
+
+            try
+            {
+                revenuModel rvml = new revenuModel();
+
+                rvml.Date = dateTimePicker1.MaxDate;
+                rvml.Typerevenu = cb_type.Text;
+                rvml.Montant = decimal.Parse(tb_montant.Text);
+                rvml.Description = rtb_description.Text;
+                rvml.IdUser = 1;
+
+                // on instancie la classe revenu pour avoir acces a la mathode ajouterRevenu
+                revenu revenu = new revenu();
+                revenu.ajouterRevenu(rvml);
+
+                tb_montant.Clear();
+                rtb_description.Clear();
+
+                MessageBox.Show("l'enregistrement a réussi avec succès");
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Erreur"+ ex);
+            }
 
         }
     }
