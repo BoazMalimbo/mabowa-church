@@ -95,6 +95,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(330, 327);
             this.panel4.TabIndex = 7;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // btn_supprimer
             // 
@@ -109,6 +110,7 @@
             this.btn_supprimer.TabIndex = 10;
             this.btn_supprimer.Text = "Supprimer";
             this.btn_supprimer.UseVisualStyleBackColor = false;
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
             // 
             // tbn_modifier
             // 
@@ -123,6 +125,7 @@
             this.tbn_modifier.TabIndex = 6;
             this.tbn_modifier.Text = "Modifier";
             this.tbn_modifier.UseVisualStyleBackColor = false;
+            this.tbn_modifier.Click += new System.EventHandler(this.tbn_modifier_Click);
             // 
             // rtb_description
             // 
