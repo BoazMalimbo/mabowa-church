@@ -71,6 +71,7 @@
             this.tbn_enregistrer.TabIndex = 6;
             this.tbn_enregistrer.Text = "Enregistrer";
             this.tbn_enregistrer.UseVisualStyleBackColor = false;
+            this.tbn_enregistrer.Click += new System.EventHandler(this.tbn_enregistrer_Click);
             // 
             // rtb_description
             // 
