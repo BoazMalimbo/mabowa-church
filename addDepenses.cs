@@ -24,17 +24,17 @@ namespace eglise_mambowa
         {
             try
             {
-                revenuModel rvml = new revenuModel();
+                depenseModel rvml = new depenseModel();
 
                 rvml.Date = dateTimePicker1.MaxDate;
-                rvml.Typerevenu = tb_categorie.Text;
+                rvml.TypeDepense = tb_categorie.Text;
                 rvml.Montant = decimal.Parse(tb_montant.Text);
                 rvml.Description = rtb_description.Text;
                 rvml.IdUser = 1;
 
                 // on instancie la classe revenu pour avoir acces a la mathode ajouterRevenu
-                revenu revenu = new revenu();
-                revenu.ajouterRevenu(rvml);
+                depense dp = new depense();
+                dp.ajouterRevenu(rvml);
 
                 tb_montant.Clear();
                 rtb_description.Clear();
@@ -45,6 +45,11 @@ namespace eglise_mambowa
             {
                 MessageBox.Show("Erreur" + ex);
             }
+        }
+
+        private void addDepenses_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

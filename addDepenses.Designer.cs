@@ -155,6 +155,7 @@
             this.ClientSize = new System.Drawing.Size(522, 367);
             this.Controls.Add(this.panel4);
             this.Name = "addDepenses";
+            this.Load += new System.EventHandler(this.addDepenses_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
